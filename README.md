@@ -33,13 +33,14 @@ hybrid-ai-lab/
 | 5 | 第 11-12 月 | 整合上线、复盘、求职材料 | 在线 Demo + 架构图 + `docs/retros/` | 待开始 |
 
 详细的每阶段目标和验收标准见 [docs/plan.md](docs/plan.md)。
+换 AI 会话时先贴 [docs/handoff.md](docs/handoff.md)，它包含背景、计划、当前进度和约束。
 
 ## 每周进度
 
 每周结束写 10 行以内：做了什么、卡在哪里、下周做什么。
 
-### Week 1
+### Week 1（2026-09-06）
 
-- 做了：
-- 卡点：
-- 下周：
+- 做了：搭好仓库结构；读完 `bridge-methods/` 8 个客户端 24 个文件，产出 `docs/bridge/inventory.md`，识别出 5 种协议、10 个能力、9 项风险，并定了 SDK 的 8 条设计要求和版本兼容/回滚/缓存方案
+- 卡点：原目录无版本判断代码、无 iOS apiClient，决定用能力探测替代版本号，iOS 拦截器对齐 android-one 结构
+- 下周：写 `docs/bridge/protocol.md` 和 `bridge-sdk/src/types.ts`，只写类型和文档不写实现
